@@ -16,27 +16,6 @@ ul {
     padding: 0;
 }
 
-/* Navbar */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: bold;
-}
-
 /* Hero Section */
 .hero {
     background: url('your-image.jpg') no-repeat center center/cover;
@@ -44,7 +23,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000000;
     text-align: center;
 }
 
@@ -57,42 +36,16 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* About Section */
-.about {
+/* Projetcs Section */
+.Projects {
     padding: 2rem;
     background: #f4f4f4;
     text-align: center;
 }
 
-.about h2 {
+.Projects h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
-
-/* Skills Section */
-.skills {
-    padding: 2rem;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.skill-item {
-    background: #333;
-    color: #fff;
-    margin: 1rem;
-    padding: 1rem;
-    width: 100px;
-    text-align: center;
 }
 
 /* Contact Section */
@@ -107,35 +60,27 @@ footer h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-#projects {
-  padding: 2rem;
+/* Repository Styles */
+.repo {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
 }
 
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.repo h3 {
+    margin-top: 0;
 }
 
-.project-item {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  width: calc(33% - 20px); /* Adjust width as needed */
-  text-align: center;
+.repo p {
+    margin-bottom: 0;
 }
 
-.project-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+.repo a {
+    color: #0366d6; /* GitHub link color */
+    text-decoration: none;
 }
 
-.project-item a {
-  color: blue;
-  text-decoration: none;
+.repo a:hover {
+    text-decoration: underline;
 }
-
-.project-item a:hover {
-  text-decoration: underline;
-}
-
