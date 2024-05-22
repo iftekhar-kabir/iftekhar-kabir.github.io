@@ -107,3 +107,35 @@ footer h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+#projects {
+  padding: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: calc(33% - 20px); /* Adjust width as needed */
+  text-align: center;
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.project-item a {
+  color: blue;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
