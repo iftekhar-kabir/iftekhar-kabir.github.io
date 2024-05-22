@@ -1,14 +1,17 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
     color: #333;
+    background: linear-gradient(to right, #43C6AC, #191654); /* Venice gradient */
 }
+
+
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #EEF7FF; /* Link color */
 }
 
 ul {
@@ -18,69 +21,135 @@ ul {
 
 /* Hero Section */
 .hero {
-    background: url('your-image.jpg') no-repeat center center/cover;
+    background: transparent; /* Transparent background */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000;
     text-align: center;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    color: #EEF7FF;
 }
 
 .hero-content p {
     font-size: 1.2rem;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    color: #EEF7FF;
 }
 
-/* Projetcs Section */
-.Projects {
-    padding: 2rem;
-    background: #f4f4f4;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Social Icons */
+.social-icons {
+    margin-top: 20px; /* Add space between icons and text */
+}
+
+.social-icons a {
+    font-size: 30px; /* Increase icon size */
+    margin: 0 10px; /* Add space between icons */
+}
+
+/* Projects Section */
+.projects {
+    max-width: 800px; /* Set a max-width */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 15px; /* Remove padding */
+    background: #EEF7FF; /* White background */
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #4D869C; /* Set border to solid and specify color */
 }
 
-.Projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.projects h2 {
+    font-size: 36px; /* Increased font size */
+    margin: 20px 0; /* Add margin */
+    color: #4D869C; /* Dark gray color */
+    border-bottom: 1px solid #4D869C; /* Add bottom border */
 }
 
-/* Contact Section */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-}
 
-footer h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
 /* Repository Styles */
 .repo {
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
+    margin: 20px; /* Add margin */
+    padding: 20px; /* Adjusted padding */
+    background-color: #EEF7FF; /* White background */
+    border-radius: 10px;
+    border: 2px #4D869C; /* Add border */
+    transition: border-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.repo:hover {
+    border-color: #4D869C; /* Dark gray color on hover */
+}
+
+.repo img {
+    width: 100%; /* Set image width to 100% of its container */
+    max-width: 500px; /* Limit maximum width to 200px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
 }
 
 .repo h3 {
     margin-top: 0;
+    font-size: 24px; /* Increased font size */
+    color: #333; /* Dark gray color */
 }
 
 .repo p {
-    margin-bottom: 0;
+    margin-bottom: 20px; /* Increased margin */
+    font-size: 16px;
+    color: #666; /* Light gray color */
 }
 
 .repo a {
-    color: #0366d6; /* GitHub link color */
+    color: #EEF7FF; /* GitHub link color */
     text-decoration: none;
 }
 
 .repo a:hover {
-    text-decoration: underline;
+    color: #4D869C;
+
 }
+
+.view-project-btn {
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #4D869C;
+    color: #EEF7FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.view-project-btn:hover {
+    background-color: #EEF7FF;
+}
+/* Animated Text */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
